@@ -5,7 +5,7 @@
 	<groupId>com.mt</groupId>
 	<artifactId>java-web-app</artifactId>
 	<packaging>war</packaging>
-	<version>1.0</version>
+	<version>0.0.1-SNAPSHOT</version>
 	
 	<name>Maven Web Application</name>
 	<url>http://mithuntechnologies.com</url>
@@ -23,6 +23,9 @@
 		<spring.version>5.0.7.RELEASE</spring.version>
 		<junit.version>4.13.1</junit.version>
 		<log4j.version>1.2.17</log4j.version>
+		<sonar.host.url>http://172.31.33.143:9000/</sonar.host.url>
+		<sonar.login>admin</sonar.login>
+		<sonar.password>passw0rd</sonar.password>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
@@ -98,18 +101,21 @@
 
 	</dependencies>
 	
-	<!-- <distributionManagement>
+	<distributionManagement>
+	
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://13.235.8.113:8081/repository/flipkart-release/</url>
+	      <url>http://172.31.42.154:9980/mithuntechnologies/repository/canarabank-snapshot/</url>
 	    </repository>
+	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://13.235.8.113:8081/repository/flipkart-snapshot/</url>
+	      <url>http://172.31.42.154:9980/mithuntechnologies/repository/canarabank-release/</url>
 	    </snapshotRepository>
-	</distributionManagement> -->
+	    
+	</distributionManagement>
 	
 	<build>
 		<plugins>
